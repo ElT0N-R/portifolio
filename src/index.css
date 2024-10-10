@@ -1,0 +1,334 @@
+
+
+/* Estilo geral */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #343a40;
+    padding: 20px;
+    color: #fff;
+}
+
+.cabecalho__titulo {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+/* Navegação */
+.navegacao__lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao__elemento {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navegacao__elemento a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.navegacao__elemento a:hover {
+    background-color: #0056b3;
+}
+
+/* Apresentação */
+.apresentacao {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.apresentacao__foto {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.apresentacao__titulo {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.apresentacao__subtitulo {
+    font-family: 'Raleway', sans-serif; 
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    color: #333; 
+    margin: 10px 0;
+}
+
+.list-eu {
+    list-style: none; 
+    padding: 0;
+    margin: 20px 0;
+}
+
+.list-eu li {
+    display: block;
+    background-color: #f0f0f0; 
+    padding: 10px 15px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-size: 1em; 
+    transition: background-color 0.3s ease; 
+}
+
+.list-eu li:hover {
+    background-color: #e0e0e0; /* Muda a cor do fundo ao passar o mouse */
+}
+
+.list {
+    display: block;
+    color: green;
+}
+
+
+/* Redes sociais */
+.redes {
+    margin-top: 20px;
+}
+
+.redes .list-inline-item {
+    display: block; 
+    margin-bottom: 30px;  
+}
+
+.redes .list-inline-item a {
+    margin: 5px 0;  /* Ajusta as margens para centralizar corretamente */
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+.redes .btn-outline-secondary {
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.redes .btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Seções */
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+    font-size: 2em;
+}
+
+#obre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+sobre-mim__titulo {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.sobre-mim__texto {
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 25px; /* bordas arredondadas estilo botão */
+    background-color: #fafafb; /* fundo estilo botão */
+    color: rgb(5, 5, 5); /* cor do texto */
+    font-size: 1em;
+   
+}
+
+
+.habilidades {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.habilidades__titulo {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.habilidades__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.habilidades__elemento {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+}
+
+.habilidades__icone {
+    font-size: 3em;
+    color: #007BFF; /* Exemplo de cor, pode ser ajustada */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.habilidades__nome {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.habilidades__elemento:hover .habilidades__icone {
+    transform: scale(1.2);
+    color: #0056b3;
+}
+
+
+/* Seção de Habilidades e Hobbies */
+.habilidades__lista,
+.hobbies__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.habilidades__elemento,
+.hobbies__elemento {
+    background-color: #ffffff;
+    width: 150px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.habilidades__elemento:hover,
+.hobbies__elemento:hover {
+    transform: translateY(-5px);
+}
+
+.habilidades__icone,
+.hobbies__icone {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.habilidades__nome,
+.hobbies__nome {
+    font-size: 1.1em;
+    color: #343a40;
+}
+
+/* Seção de Formação */
+.formacao__lista {
+    list-style: none;
+    padding: 0;
+}
+
+.formacao__elemento {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.formacao__icone {
+    width: 50px;
+    margin-right: 20px;
+}
+
+/* Seção de Contato */
+.contato__formulario {
+    background-color: #ffffff;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato {
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px; /* Largura máxima */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center; /* Center align items */
+    margin: 20px auto; /* Center the form horizontally */
+    width: 100%;
+    max-width: 400px; /* Set a max width for the form */
+}
+
+input, textarea {
+    width: 100%; /* Full width */
+    margin-bottom: 15px; /* Space between elements */
+    padding: 10px; /* Inner padding */
+    font-size: 1em; /* Font size */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+textarea {
+    height: 100px; /* Fixed height for the textarea */
+    resize: none; /* Disable resizing */
+}
+
+button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Inner padding */
+    font-size: 1.1em; /* Font size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #000dff; /* Button color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #ff8533; /* Darker button on hover */
+}
+
+
+
+
